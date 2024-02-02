@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock-Paper-scissor (Booleans)</title>
+    </head>
+    <body>
+
+        <button
+        onclick="
+        
+        let compGuess = Math.random();
+        let randomGuess = '';
+        
+        if (compGuess>=0 && compGuess < 1/3) {
+            randomGuess='Rock';
+        } else if (compGuess>=1/3 && compGuess < 2/3){
+            randomGuess = 'Paper';
+        } 
+          else if (compGuess>=2/3 && compGuess <= 1){
+            randomGuess = 'Scissor';
+        }
+            console.log(randomGuess);
+
+            let result='';
+         
+         if (randomGuess === 'Rock'){
+            result = 'Tie';
+         } else if (randomGuess = 'Paper'){
+            result = 'You lose';
+         } else if (randomGuess === 'Scissor'){
+            result = 'You win';
+         }
+         alert(`You chose Rock, computer chose ${randomGuess}. ${result}`);
+         "
+        >Rock</button>
+
+        <button
+        onclick="
+        
+        let compGuess = Math.random();
+        let randomGuess = '';
+        
+        if (compGuess>=0 && compGuess < 1/3) {
+            randomGuess='Rock';
+        } else if (compGuess>=1/3 && compGuess < 2/3){
+            randomGuess = 'Paper';
+        } 
+          else if (compGuess>=2/3 && compGuess <= 1){
+            randomGuess = 'Scissor';
+        }
+            console.log(randomGuess);
+
+            let result='';
+         
+         if (randomGuess === 'Rock'){
+            result = 'You win';
+         } else if (randomGuess = 'Paper'){
+            result = 'Tie';
+         } else if (randomGuess === 'Scissor'){
+            result = 'You lose';
+         }
+         alert(`You chose Paper, computer chose ${randomGuess}. ${result}`);
+         "
+        
+        >Paper</button>
+
+
+        <button
+        onclick="
+        
+        let compGuess = Math.random();
+        let randomGuess = '';
+        
+        if (compGuess>=0 && compGuess < 1/3) {
+            randomGuess='Rock';
+        } else if (compGuess>=1/3 && compGuess < 2/3){
+            randomGuess = 'Paper';
+        } 
+          else if (compGuess>=2/3 && compGuess <= 1){
+            randomGuess = 'Scissor';
+        }
+            console.log(randomGuess);
+
+            let result='';
+         
+         if (randomGuess === 'Rock'){
+            result = 'You lose';
+         } else if (randomGuess = 'Paper'){
+            result = 'You win';
+         } else if (randomGuess === 'Scissor'){
+            result = 'Tie';
+         }
+         alert(`You chose scissor, computer chose ${randomGuess}. ${result}`);
+         "
+        >Scissor</button>
+        
+
+        <script>
+        
+
+        </script>
+
+
+
+    </body>
+</html>
