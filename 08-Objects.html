@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+
+        <script>
+            // Property:Value pair
+            const product = {
+                name: 'Socks',
+                price: 5000
+            };
+
+            console.log(product); // displays all the object
+            console.log(product.name); // Displays the value of name (socks)
+
+            // Changing the propert
+            product.name = 'Cotton socks'
+            console.log(product.name)
+
+            // Checking a property not in the object
+            // console.log(property.item) // undefined
+
+            //Appending a new item in the object
+            product.newProduct = true;
+            console.log(product);
+
+            // Deleting a property value pair
+           delete product.newProduct
+           console.log(product)
+
+            
+        </script>
+    </body>
+</html>
