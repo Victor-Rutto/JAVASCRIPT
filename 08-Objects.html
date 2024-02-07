@@ -7,29 +7,71 @@
 
         <script>
             // Property:Value pair
-            const product = {
-                name: 'Socks',
-                price: 5000
-            };
+            // const product = {
+            //     name: 'Socks',
+            //     price: 5000
+            // };
 
-            console.log(product); // displays all the object
-            console.log(product.name); // Displays the value of name (socks)
+            // console.log(product); // displays all the object
+            // console.log(product.name); // Displays the value of name (socks)
 
             // Changing the propert
-            product.name = 'Cotton socks'
-            console.log(product.name)
+            // product.name = 'Cotton socks'
+            // console.log(product.name)
 
             // Checking a property not in the object
             // console.log(property.item) // undefined
 
             //Appending a new item in the object
-            product.newProduct = true;
-            console.log(product);
+            // product.newProduct = true;
+            // console.log(product);
 
             // Deleting a property value pair
-           delete product.newProduct
-           console.log(product)
+        //    delete product.newProduct
+        //    console.log(product)
 
+
+        // ACCESSING ITEMS USING BRACKET NOTATION
+
+        // Allows us to access properties that don't work with dot notation
+        // We can use variables, or operations such as addition and multiplication.
+
+        const product2 = {
+            name:'socks',
+            price:5000,
+            ['delivery-time']: '2-days'
+        };
+
+        console.log(product2['name'])
+        console.log(product2['delivery-time']) //Undefined
+
+        // NESTING
+
+        const product3 = {
+            name:'socks',
+            price:5000,
+            ['delivery-time']: '2-days',
+            rating: {
+                stars:4.5,
+                count: 87
+            }
+        };
+        console.log(product3.rating.count)
+
+
+        // FUNTION INSIDE AN OBJECT
+        const product4 = {
+            name:'socks',
+            price:5000,
+            ['delivery-time']: '2-days',
+            rating: {
+                stars:4.5,
+                count: 87
+            }, 
+            fun: function function1(){
+                console.log('a function inside an object')
+            }
+        };
             
         </script>
     </body>
