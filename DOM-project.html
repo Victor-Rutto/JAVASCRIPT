@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event Listeners</title>
+</head>
+<body>
+<p>Amazon shipping Calculator</p>
+
+<input class= "js-input-cost" 
+onkeydown="
+handleKeydown();
+"
+placeholder="Cost of order">
+
+
+<p class="js-total-cost"></p>
+
+
+    <!-- ############ JAVASCRIPT ############ -->
+    <script>
+        function calculateCost (){
+            let cost = document.querySelector('.js-input-cost')
+            cost = Number(cost.value)
+
+document.querySelector('.js-total-cost').innerHTML = cost
+        }
+
+        function handleKeydown(){
+            if (event.key === 'Enter'){
+            calculateCost ();
+}
+        }
+
+    </script>
+</body>
+</html>

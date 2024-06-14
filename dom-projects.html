@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DOM Projects</title>
+
+        <!-- <script> alert(supersimple.dev/project/dom)</script> -->
+
+    </head>
+
+    <body>
+        <p>YouTube Subscribe Button</p>
+        <button onclick="
+           subscribe();
+        " class="js-subscribe-button">Subscribe</button>
+
+        
+
+        <!-- ############ JAVASCRIPT ############ -->
+        <script>
+            function subscribe(){
+                const buttonElemment = document.querySelector('.js-subscribe-button');
+                //  We can use buttonEllement.innerText to take care of spaces in the button
+
+                if (buttonElemment.innerHTML === 'Subscribe'){
+                    buttonElemment.innerHTML = 'Subscribed';
+                }
+                else{
+                    buttonElemment.innerHTML = 'Subscribe';
+                }
+            }
+            
+        </script> 
+
+
+    </body>
+</html>

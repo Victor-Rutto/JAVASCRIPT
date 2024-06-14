@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DOM</title>
+
+        <!-- <script>
+            alert("Welcome to Javascript");
+        </script> -->
+
+        
+    </head>
+    <body>
+        <button>DIM</button>
+        <button class="js-button">Second Button</button>
+        <!-- ############ JAVASCRIPT ############ -->
+        <script>
+
+            // console.log(document.title);
+            // document.body.innerHTML = "<button> DOM</button>" //Alters what is displayed in the body
+            
+            // console.log(document.body.innerHTML);
+            // console.log(document.body); // shows what is inside the body in the console
+            
+
+            // ############# Document.querySelector
+            // This lets us get any element from the page and put it inside Javascript
+
+            console.log(document.querySelector("button")); // This gives the button
+            console.log(document.querySelector("button").innerHTML) // This gives the text DOM
+
+            document.querySelector("button")
+                .innerHTML = 'Mkenya' // This changes the html inside the button
+
+            // Saving an element as a variable.
+            const buttonElemet =   console.log(document.querySelector(".js-button")); // Used to select specific element
+
+            console.log(buttonElemet);
+
+
+        </script> 
+
+
+    </body>
+</html>
